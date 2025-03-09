@@ -84,7 +84,11 @@
 
 | Before | After |
 |--------|-------|
-| ..     | ..    |
+| ![img_21.png](img_21.png)| ![img_22.png](img_22.png)|
+
+| Conclusion |
+|------------|
+| ![img_23.png](img_23.png)|
 
 ## Reflection Module 05
 
