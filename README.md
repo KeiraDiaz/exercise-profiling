@@ -64,7 +64,11 @@
 
 | Before | After |
 |--------|-------|
-| ..     | ..    |
+| ![img_15.png](img_15.png)|![img_16.png](img_16.png)|
+
+| Conclusion                |
+|---------------------------|
+| ![img_17.png](img_17.png) |
 
 ### Opt All Student Names
 
@@ -82,20 +86,29 @@
 
 >What is the difference between the approach of performance testing with JMeter and profiling with IntelliJ Profiler in the context of optimizing application performance?
 
-JMeter tests system-wide performance under load by simulating multiple users, measuring response times and throughput, while IntelliJ Profiler analyzes code-level performance, identifying CPU-intensive methods, memory leaks, and inefficient threading. JMeter shows what is slow, whereas profiling explains why it's slow.
+Performance testing with JMeter and profiling with IntelliJ Profiler serve distinct but complementary roles in optimizing application performance. JMeter focuses on testing the application under various load conditions by simulating multiple users, measuring response times, throughput, and overall system behavior under stress. It helps identify bottlenecks at a system level, such as slow database queries or inefficient load balancing.
+
+On the other hand, profiling with IntelliJ Profiler provides a more granular analysis at the code level. It helps in identifying CPU-intensive methods, memory leaks, inefficient thread usage, and other internal inefficiencies. While JMeter tells us what part of the application is slow, IntelliJ Profiler helps us understand why it is slow by providing insights into execution time, memory allocation, and method call hierarchies.
 
 >How does the profiling process help you in identifying and understanding the weak points in your application?
 
-Profiling reveals inefficient code by analyzing CPU usage, memory allocation, and thread behavior. Tools like flame graphs and call trees pinpoint performance hotspots, helping developers optimize critical code paths, reduce memory waste, and improve execution speed.
+Profiling helps in pinpointing performance bottlenecks by collecting runtime data, such as CPU usage, memory allocation, and thread behavior. By analyzing profiling outputs like flame graphs, call trees, and timeline views, we can identify methods consuming excessive CPU time, locate memory leaks, and detect inefficient object instantiations. This level of detail allows us to target specific optimizations rather than making blind performance enhancements.
 
+For example, if a profiler shows that a method responsible for sorting data is taking a significant amount of CPU time, we might consider optimizing it using a more efficient sorting algorithm or reducing redundant computations. Without profiling, such inefficiencies might remain hidden despite performance testing results showing slow response times.
 
 >Do you think IntelliJ Profiler is effective in assisting you to analyze and identify bottlenecks in your application code?
 
-IntelliJ Profiler effectively detects bottlenecks by visualizing execution time, memory usage, and thread activity. Features like flame graphs and call trees highlight inefficiencies, making it easier to optimize performance and reduce resource consumption.
+Yes, IntelliJ Profiler is highly effective for analyzing and identifying bottlenecks within application code. It provides detailed insights into execution time at the method level, memory usage patterns, garbage collection behavior, and thread synchronization issues. Features such as flame graphs, call trees, and real-time profiling make it easier to visualize performance issues.
+
+However, its effectiveness depends on how well the profiling results are interpreted. If used correctly, it helps developers make data-driven optimizations rather than guessing where performance issues might exist. Additionally, IntelliJ Profiler integrates seamlessly with the development environment, making it convenient to analyze performance bottlenecks without switching between tools.
 
 >What are the main challenges you face when conducting performance testing and profiling, and how do you overcome these challenges?
 
-Challenges include variable test results, profiler overhead, and data complexity. Solutions involve controlled test environments, using sampling-based profiling to reduce overhead, and filtering profiler data to focus on critical issues.
+Challenges include 
+* High Variability in Results: Performance testing results may fluctuate due to external factors such as network latency or varying system loads. To overcome this, we ensure tests are conducted in a controlled environment and repeated multiple times for consistency.
+* Overhead of Profiling: Running a profiler can introduce performance overhead, affecting real-time execution. To mitigate this, we use sampling-based profiling instead of instrumentation-based profiling where possible.
+* Interpreting Data Correctly: Large profiling datasets can be overwhelming. We address this by focusing on hotspots (methods with high execution time) and using filtering techniques to isolate relevant data.
+Ensuring Profiling Reflects Real-world Scenarios: Profiling a locally running application might not always reflect production conditions. We counter this by profiling under load, simulating real-world usage with tools like JMeter while running the profiler.
 
 >What are the main benefits you gain from using IntelliJ Profiler for profiling your application code?
 
