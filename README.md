@@ -35,6 +35,10 @@
 | ![img_6.png](img_6.png) | ![img_3.png](img_3.png) |
 
 
+| Jmeter After              |
+|---------------------------|
+| ![img_24.png](img_24.png) |
+
 ### All Student Names
 
 
@@ -46,6 +50,9 @@
 |-------------------------|-------------------------|
 | ![img_10.png](img_10.png) | ![img_7.png](img_7.png) |
 
+| Jmeter After              |
+|---------------------------|
+| ![img_25.png](img_25.png) |
 
 
 ### Highest GPA
@@ -57,6 +64,11 @@
 | Graph                   | Jlt Logs                |
 |-------------------------|-------------------------|
 | ![img_14.png](img_14.png) | ![img_11.png](img_11.png)|
+
+| Jmeter After              |
+|---------------------------|
+| ![img_26.png](img_26.png) |
+
 
 ## Profiling
 
@@ -70,6 +82,8 @@
 |---------------------------|
 | ![img_17.png](img_17.png) |
 
+63% Improvement overall!!
+
 ### Opt All Student Names
 
 | Before | After |
@@ -80,6 +94,8 @@
 |------------|
 | ![img_20.png](img_20.png) |
 
+78.5% Improvement overall!!
+
 ### Opt Highest GPA
 
 | Before | After |
@@ -89,6 +105,8 @@
 | Conclusion |
 |------------|
 | ![img_23.png](img_23.png)|
+
+82.2% Improvement overall!!
 
 ## Reflection Module 05
 
